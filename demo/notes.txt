@@ -1,0 +1,26 @@
+Registration of a user 
+Classify a downloaded image from the web
+Refill tokens
+
+
+#### Resource Method Chart
+
+Resource
+Address
+Protocol
+Param
+Response and Status codes
+
+| Resource | Address | Protocol | Param | Response and Status codes |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Register User | /register | POST | username:str,pasword:str | 200 ok, 301 invalid username |
+| Classify Image | /classify | POST | username:str,pasword:str,url:str | 200 ok, 301 invalid username, 302 invalid password, 303 out of tokens |
+| Refill Tokens | /refill | POST | username:str,refillPasword:str,refillAmount:int | 200 ok, 301 invalid username, 304 invalid refillPassword |
+
+
+####Zip into multiparty on Mac
+`zip <Folder-Name> --out <Name>.zip -s <size partitions>m`
+eg: `zip inception-2015-12-05 --out inception-2015.zip -s 20m`
+eg: `zip inception-2015-12-05.zip --out inception-2015-12-05.zip -s 20m`
+
+
